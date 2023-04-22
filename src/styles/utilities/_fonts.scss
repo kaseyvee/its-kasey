@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Karla:wght@700&display=swap');
+
+$regular: 400;
+$bold: 700;
+
+@mixin inconsolata($fontWeight: $regular) {
+  font-family: 'Inconsolata', monospace;
+  font-weight: $fontWeight;
+}
+
+@mixin karla {
+  font-family: 'Karla', sans-serif;
+  font-weight: $bold;
+}
+
+p {
+  @include inconsolata;
+  font-size: 1rem;
+
+  @media (min-width: 768px) {
+    font-size: 1.5rem;
+  }
+}
+
+h1, h2 {
+  @include karla;
+  font-size: 3rem;
+
+  @media (min-width: 768px) {
+    font-size: 4rem;
+  }
+}
+
+h3 {
+  @include karla;
+  font-size: 2rem;
+}
+
+.project-links {
+  @include karla;
+  font-size: 1rem;
+  
+  @media (min-width: 768px) {
+    font-size: 1.5rem;
+  }
+}
+
+.numbers {
+  @include karla;
+  font-size: 6rem;
+  color: $egg;
+  opacity: 0.25;
+}
+
+.contacts {
+  @include inconsolata;
+  font-size: 1rem;
+  color: $yellow;
+}
