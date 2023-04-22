@@ -1,0 +1,90 @@
+.nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  
+  &_wrapper {
+    background-color: rgba($black, 0.9);
+  
+    $paddingTop: 8rem;
+    $paddingBottom: 3rem;
+    padding: $paddingTop 3rem $paddingBottom 3rem;
+    height: calc(100% - ($paddingTop + $paddingBottom));
+    width: min(100%, 1100px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    &_socials {
+      display: flex;
+      gap: 1rem;
+
+      a {
+        svg {
+          fill: $yellow;
+          transition-duration: 200ms;
+        }
+  
+        &:hover svg, &:focus svg {
+          fill: $egg;
+        }
+      }
+    }
+  }
+  
+  &_mobile-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    svg {
+      fill: $yellow;
+      transition-duration: 200ms;
+    }
+    
+    &:hover svg, &:focus svg {
+      fill: $egg;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .nav {
+    left: 0;
+    $paddingX: 2rem;
+    padding: 0 $paddingX;
+    width: calc(100% - $paddingX * 2);
+
+    &_wrapper {
+      align-items: center;
+      background: none;
+      flex-direction: row;
+      height: fit-content;
+      padding: 4rem 0rem 1rem 0rem;
+
+      &_socials {
+        gap: 2rem;
+
+        a {
+          svg {
+            width: 25px;
+            height: 25px;
+            fill: $egg;
+          }
+    
+          &:hover svg, &:focus svg {
+            fill: $yellow;
+          }
+        }
+      }
+    }
+  }
+}

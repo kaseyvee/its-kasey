@@ -1,10 +1,10 @@
-import NavItems from "./components/NavItems"
+import Nav from "./components/Nav"
 
 function App() {
 
   return (
     <main>
-      <NavItems />
+      <Nav />
     </main>
   )
 }
