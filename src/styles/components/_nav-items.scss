@@ -1,0 +1,39 @@
+.nav-items {
+  @include karla;
+  font-size: 2.25rem;
+  color: $egg;
+
+  li {
+    margin-bottom: 0.5rem;
+    width: fit-content;
+
+    &:hover {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        bottom: 0;
+        left: -0.5rem;
+        width: 100%;
+        height: 1.25rem;
+        background-color: $yellow;
+      }
+    }
+  }
+}
+
+.hero-nav-items {
+  @extend .nav-items;
+
+  @media (min-width: 768px) {
+    font-size: 4rem;
+  }
+
+  li:hover::before {
+    @media (min-width: 768px) {
+      height: 2rem;
+    }
+  }
+}
