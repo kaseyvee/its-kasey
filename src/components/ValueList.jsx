@@ -2,10 +2,10 @@ import PropTypes from "prop-types";
 
 ValueList.propTypes = {
   values: PropTypes.arrayOf(PropTypes.shape({
-    id: PropTypes.number,
-    number: PropTypes.number,
-    title: PropTypes.string,
-    description: PropTypes.string,
+    id: PropTypes.number.isRequired,
+    number: PropTypes.number.isRequired,
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
   }))
 }
 

@@ -8,9 +8,7 @@ function WhyMe() {
     <section aria-labelledby="header" id="me" className="why-me container">
       <div className="wrapper">
         <h2 id="header">Why Me?</h2>
-        <div>
-          <ValueList values={values} />
-        </div>
+        <ValueList values={values} />
       </div>
     </section>
   );

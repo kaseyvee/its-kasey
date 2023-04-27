@@ -2,7 +2,7 @@ import me from "../assets/me.png";
 import { useMediaQuery } from "react-responsive";
 
 function About() {
-  const isDesktop = useMediaQuery({ query: "(min-width: 768px"});
+  const isDesktop = useMediaQuery({ query: "(min-width: 768px) and (min-height: 550px)"});
 
   return (
     <section aria-label="about" id="about" className="about container">

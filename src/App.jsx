@@ -2,6 +2,7 @@ import Nav from "./components/Nav"
 import About from "./sections/About"
 import Contacts from "./sections/Contacts"
 import Hero from "./sections/Hero"
+import Projects from "./sections/Projects"
 import WhyCompany from "./sections/WhyCompany"
 import WhyMe from "./sections/WhyMe"
 
@@ -15,6 +16,7 @@ function App() {
         <About />
         <WhyCompany />
         <WhyMe />
+        <Projects />
         <Contacts />
       </main>
     </>

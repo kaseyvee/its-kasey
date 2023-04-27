@@ -17,7 +17,7 @@ p {
   @include inconsolata;
   font-size: 1rem;
 
-  @media (min-width: 768px) {
+  @media (min-width: 768px) and (min-height: 550px) {
     font-size: 1.5rem;
   }
 }
@@ -27,7 +27,7 @@ h1, h2 {
   font-size: 3rem;
   line-height: 2.5rem;
   
-  @media (min-width: 768px) {
+  @media (min-width: 768px) and (min-height: 550px) {
     font-size: 4rem;
     line-height: 3.125rem;
   }
@@ -42,7 +42,7 @@ h3 {
   @include karla;
   font-size: 1rem;
   
-  @media (min-width: 768px) {
+  @media (min-width: 768px) and (min-height: 550px) {
     font-size: 1.5rem;
   }
 }

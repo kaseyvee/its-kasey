@@ -10,8 +10,8 @@ import { useMediaQuery } from "react-responsive";
 
 function Nav() {
   const [navOpen, setNavOpen] = useState(false);
-  const isDesktop = useMediaQuery({ query: "(min-width: 768px"});
-
+  const isDesktop = useMediaQuery({ query: "(min-width: 768px) and (min-height: 550px)"});
+  
   function handleToggleNav() {
     setNavOpen(!navOpen);
   }
