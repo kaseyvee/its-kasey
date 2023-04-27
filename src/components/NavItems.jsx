@@ -1,8 +1,8 @@
 import company from "../data";
 
-function NavItems(props) {
+function NavItems() {
   return (
-    <ul className={`nav-items ${props.className}`}>
+    <ul className="nav-items">
       <li><a href="#about">About me</a></li>
       <li><a href="#company">Why {company}?</a></li>
       <li><a href="#me">Why me?</a></li>

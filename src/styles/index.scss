@@ -1,9 +1,11 @@
 @import "utilities";
 @import "components";
+@import "sections";
 
 * {
   margin: 0;
   padding: 0;
+  transition-duration: 200ms;
 }
 
 a {
@@ -18,4 +20,12 @@ li {
 body {
   background-color: green;
   @include center;
+
+  #root {
+    width: 100%;
+
+    main {
+      width: 100%;
+    }
+  }
 }

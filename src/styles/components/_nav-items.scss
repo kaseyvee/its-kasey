@@ -33,17 +33,6 @@
   }
 }
 
-.hero-nav-items {
-  @extend .nav-items;
-  @media (min-width: 768px) {
-    font-size: 4rem;
-    
-    li:hover::before {
-      height: 2rem;
-    }
-  }
-}
-
 @media (min-width: 768px) {
   .nav-items {
     @include inconsolata;
