@@ -1,0 +1,10 @@
+.container {
+  @include center;
+  height: 100vh;
+  position: relative;
+
+  .wrapper {
+    padding: 2rem;
+    width: min(100%, 1100px);
+  }
+}

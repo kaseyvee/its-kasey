@@ -1,13 +1,16 @@
 .hero {
-  height: 100vh;
   background-color: $black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
 
-  .wrapper {
-    padding: 2rem;
-    width: min(100%, 1100px);
+  .contacts {
+    display: flex;
+    flex-direction: column;
+
+    a {
+      width: fit-content;
+      
+      &:focus, &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }

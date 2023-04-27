@@ -1,6 +1,9 @@
 .info-block {
   color: $egg;
-  max-width: 30rem;
+  max-width: 31rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 
   h1, h2 {
     color: $yellow;

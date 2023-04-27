@@ -4,7 +4,7 @@ import Divider from '../components/Divider';
 
 function Hero() {
   return (
-    <section aria-labelledby='landing-page' className='hero'>
+    <section aria-labelledby='landing-page' className='hero container'>
       <div className='wrapper'>
         <InfoBlock
           id="landing-page"
@@ -14,7 +14,7 @@ function Hero() {
           buttonText="Get to know me"
         />
       </div>
-      <Divider />
+      <Divider position="bottom" />
     </section>
   );
 }

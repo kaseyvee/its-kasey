@@ -8,7 +8,7 @@ function NavItems() {
       <li><a href="#me">Why me?</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#toolkit">Toolkit</a></li>
-      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contacts">Contacts</a></li>
     </ul>
   );
 }

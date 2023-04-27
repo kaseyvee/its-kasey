@@ -25,9 +25,11 @@ p {
 h1, h2 {
   @include karla;
   font-size: 3rem;
-
+  line-height: 2.5rem;
+  
   @media (min-width: 768px) {
     font-size: 4rem;
+    line-height: 3.125rem;
   }
 }
 
