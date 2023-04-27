@@ -1,5 +1,6 @@
 import company from '../data';
 import InfoBlock from "../components/InfoBlock"
+import Divider from '../components/Divider';
 
 function Hero() {
   return (
@@ -13,6 +14,7 @@ function Hero() {
           buttonText="Get to know me"
         />
       </div>
+      <Divider />
     </section>
   );
 }
