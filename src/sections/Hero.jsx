@@ -14,7 +14,7 @@ function Hero() {
           href="/#about"
         />
       </div>
-      <Divider position="bottom" />
+      <Divider position="bottom" colour="yellow" />
     </section>
   );
 }

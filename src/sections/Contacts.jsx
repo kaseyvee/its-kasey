@@ -3,7 +3,7 @@ import InfoBlock from "../components/InfoBlock";
 
 function Contacts() {
   return (
-    <section aria-labelledby='landing-page' id="contacts" className='container'>
+    <section aria-label="contacts" id="contacts" className='container'>
       <div className='wrapper'>
         <InfoBlock
           header="Thanks for the read :)"
@@ -12,7 +12,7 @@ function Contacts() {
           href="https://resume.creddle.io/resume/hje8hgzfv4a"
         />
       </div>
-      <Divider position="top" />
+      <Divider position="top" colour="yellow" />
     </section>
   );
 }

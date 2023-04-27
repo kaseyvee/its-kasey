@@ -14,8 +14,12 @@
     top: 0;
   }
 
-  .shape-fill {
-    fill: #EDBC40;
+  .yellow {
+    fill: $yellow;
+  }
+
+  .black {
+    fill: $black;
   }
 
   svg {

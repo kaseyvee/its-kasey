@@ -1,0 +1,61 @@
+.value-list {
+
+  &_item {
+    
+    header {
+      position: relative;
+
+      h3 {
+        color: $yellow;
+        position: absolute;
+        bottom: 1rem;
+        left: 2rem;
+        white-space: nowrap;
+      }
+    }
+
+    &_description {
+      max-width: 35rem;
+    }
+    
+    p {
+      color: $egg;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .value-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    &_item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      header {
+        position: relative;
+  
+        p {
+          position: absolute;
+          top: -3rem;
+          left: 2rem;
+        }
+
+        h3 {
+          position: static;
+        }
+      }
+
+      &:nth-child(2) {
+        align-self: center;
+      }
+      
+      &:nth-child(3) {
+        align-self: flex-end;
+      }
+    }
+  }
+}
