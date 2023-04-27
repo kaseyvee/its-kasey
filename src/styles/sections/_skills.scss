@@ -32,6 +32,29 @@
         justify-content: center;
         gap: 1rem;
         width: 10rem;
+
+        &_item {
+          position: relative;
+
+          &:hover > .tooltip {
+            display: block;
+          }
+
+          &:hover > img {
+            filter: brightness(5);
+          }
+  
+          .tooltip {
+            display: none;
+            position: absolute;
+            background-color: $egg;
+            width: fit-content;
+            z-index: 10;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
       }
     }
   }
@@ -42,13 +65,40 @@
     align-items: center;
     gap: 1rem;
 
+    position: relative;
+
+    &:hover > .tooltip {
+      display: block;
+    }
+    
+    &:hover > img {
+      filter: brightness(5);
+    }
+
     p {
       @include karla;
       font-size: inherit;
     }
+
+    .tooltip {
+      @include inconsolata(400);
+      font-size: 1rem;
+      display: none;
+      position: absolute;
+      background-color: $egg;
+      width: fit-content;
+      z-index: 10;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 
   @media (min-width: 768px) {
+    .tooltip {
+      font-size: 1.5rem;
+    }
+
     h2 {
       margin-top: 5rem;
     }

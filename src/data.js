@@ -38,7 +38,7 @@ export const data = {
       id: 6,
       number: 3,
       title: "Accessibility",
-      description: "The internet is a place that should be accessible to everyone. I continuously strive to expand my knowledge of creating inclusive designs, ensuring that my work can reach the widest possible audience, regardless of any disabilities. I believe that prioritizing accessibility and user experience go hand in hand."
+      description: "The internet is a place that should be accessible to everyone. I continuously strive to expand my knowledge of creating inclusive designs, ensuring that my work can reach the widest possible audience, regardless of any disabilities."
     }
   ],
   projects: [
@@ -102,7 +102,7 @@ export const data = {
     {
       id: 14,
       title: "Systems & Databases",
-      items: ["PostgreSQL", "MySQL", "Firebase", "Sass"]
+      items: ["PostgreSQL", "MySQL", "Firebase", "GitHub"]
     },
     {
       id: 15,
