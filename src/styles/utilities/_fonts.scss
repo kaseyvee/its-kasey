@@ -33,7 +33,7 @@ h1, h2 {
   }
 }
 
-h3 {
+h3, .also {
   @include karla;
   font-size: 2rem;
 }

@@ -5,9 +5,9 @@ function WhyMe() {
   const values = data.whyMe;
 
   return (
-    <section aria-labelledby="header" id="me" className="why-me container">
+    <section aria-labelledby="why-me-title" id="me" className="why-me container">
       <div className="wrapper">
-        <h2 id="header">Why Me?</h2>
+        <h2 id="why-me-title">Why Me?</h2>
         <ValueList values={values} />
       </div>
     </section>
