@@ -24,13 +24,13 @@ function Nav() {
 
           <ul className="nav_wrapper_socials">
             <li>
-              <a href="" aria-label="GitHub">
+              <a href="https://github.com/kaseyvee" aria-label="GitHub">
                 <GitHubIcon />
               </a>
             </li>
 
             <li>
-              <a href="" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/in/kasey-valdez/" aria-label="LinkedIn">
                 <LinkedInIcon />
               </a>
             </li>

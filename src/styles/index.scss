@@ -17,14 +17,19 @@ li {
   list-style-type: none;
 }
 
-body {
-  @include center;
+html {
+  scroll-behavior: smooth;
 
-  #root {
-    width: 100%;
-
-    main {
+  body {
+    @include center;
+    background-color: $black;
+  
+    #root {
       width: 100%;
+  
+      main {
+        width: 100%;
+      }
     }
   }
 }

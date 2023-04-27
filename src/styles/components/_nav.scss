@@ -28,7 +28,6 @@
       a {
         svg {
           fill: $yellow;
-          transition-duration: 200ms;
         }
   
         &:hover svg, &:focus svg {
@@ -49,7 +48,6 @@
 
     svg {
       fill: $yellow;
-      transition-duration: 200ms;
     }
     
     &:hover svg, &:focus svg {

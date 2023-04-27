@@ -1,0 +1,16 @@
+#contacts {
+  background-color: $black;
+
+  .contacts {
+    display: flex;
+    flex-direction: column;
+
+    a {
+      width: fit-content;
+      
+      &:focus, &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
