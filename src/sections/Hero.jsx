@@ -4,7 +4,7 @@ import Divider from '../components/Divider';
 
 function Hero() {
   return (
-    <section aria-label='hero' className='hero container'>
+    <section aria-label='hero' className='hero | container'>
       <div className='wrapper'>
         <InfoBlock
           hero={true}

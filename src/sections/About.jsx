@@ -5,7 +5,7 @@ function About() {
   const isDesktop = useMediaQuery({ query: "(min-width: 768px) and (min-height: 550px)"});
 
   return (
-    <section aria-label="about" id="about" className="about container">
+    <section aria-label="about" id="about" className="about | container">
       <div className="wrapper">
         {!isDesktop && <h2>I&apos;m Kasey :)</h2>}
         <div className="about_img-container">

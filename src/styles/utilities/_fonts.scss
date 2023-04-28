@@ -36,6 +36,7 @@ h1, h2 {
 h3, .also {
   @include karla;
   font-size: 2rem;
+  line-height: 1.75rem
 }
 
 .project-links {

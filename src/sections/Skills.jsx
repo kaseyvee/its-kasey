@@ -27,7 +27,7 @@ function Skills() {
   })
 
   return (
-    <section aria-labelledby="skills-title" id='skills' className='skills container'>
+    <section aria-labelledby="skills-title" id='skills' className='skills | container'>
       <div className='wrapper'>
         <h2 id="skills-title">Some tools I&apos;ve worked with</h2>
 

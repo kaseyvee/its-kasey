@@ -1,4 +1,54 @@
 .projects {
   height: 100vh;
-  background-color: pink;
+  background-color: $yellow;
+
+  &_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-block: 2.5rem;
+    // margin: 3rem;
+
+    &_images {
+      position: relative;
+
+      &_main {
+        width: 100%;
+      }
+      
+      &_alt {
+        width: 30%;
+        position: absolute;
+        right: 5%;
+        top: 2rem;
+      }
+
+      &_main, &_alt {
+        filter: drop-shadow(0 0.75rem 0.75rem rgba($black, 0.3))
+      }
+    }
+
+    &_info {
+      display: grid;
+      gap: 1rem;
+
+      .project-links {
+        color: $egg;
+
+        a {
+          &:hover, &:focus {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    &_card {
+      flex-direction: row;
+      margin-block: 5rem;
+    }
+  }
 }

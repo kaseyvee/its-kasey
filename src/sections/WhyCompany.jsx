@@ -6,7 +6,7 @@ function WhyCompany() {
   const values = data.whyCompany;
 
   return (
-    <section aria-labelledby="why-company-title" id="company" className="why-company container">
+    <section aria-labelledby="why-company-title" id="company" className="why-company | container">
       <Divider position="top" colour="yellow"/>
       <div className="wrapper">
         <h2 id="why-company-title">Why {company}?</h2>

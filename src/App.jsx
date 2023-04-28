@@ -1,10 +1,11 @@
 import Nav from "./components/Nav"
-import About from "./sections/About"
-import Contacts from "./sections/Contacts"
 import Hero from "./sections/Hero"
-import Skills from "./sections/Skills"
+import About from "./sections/About"
 import WhyCompany from "./sections/WhyCompany"
 import WhyMe from "./sections/WhyMe"
+import Projects from "./sections/Projects"
+import Skills from "./sections/Skills"
+import Contacts from "./sections/Contacts"
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         <About />
         <WhyCompany />
         <WhyMe />
+        <Projects />
         <Skills />
         <Contacts />
       </main>
