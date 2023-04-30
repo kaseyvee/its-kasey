@@ -10,7 +10,7 @@ function Skills() {
 
       return (
         <div key={item} className="skills_list_item_icons_item">
-          <img src={`/skills/icon-${parsedItem}.svg`} alt={item} />
+          <img src={`skills/icon-${parsedItem}.svg`} alt={item} />
           <p className="tooltip" aria-hidden="true">{item}</p>
         </div>
       )
@@ -37,7 +37,7 @@ function Skills() {
 
         <div className="skills_also also">
           <p>and also</p>
-          <img src="/skills/icon-figma.svg" alt="Figma" />
+          <img src="skills/icon-figma.svg" alt="Figma" />
           <p>:)</p>
           <p className="tooltip" aria-hidden="true">Figma</p>
         </div>

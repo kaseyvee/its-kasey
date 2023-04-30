@@ -48,8 +48,8 @@ export const data = {
       demo: "https://kaseyvee.github.io/manage-landing/",
       repo: "https://github.com/kaseyvee/manage-landing",
       description: "This landing page was built using React, Sass, and Framer Motion, with a mobile-first workflow and web accessibility in mind. Web accessibility was a key consideration in the development process, making sure the landing page is inclusive and can be accessed by everyone.",
-      img1: "/projects/manage-1.png",
-      img2: "/projects/manage-2.png",
+      img1: "projects/manage-1.png",
+      img2: "projects/manage-2.png",
     },
     {
       id: 8,
@@ -57,8 +57,8 @@ export const data = {
       demo: "https://kaseyvee.github.io/clock-app/",
       repo: "https://github.com/kaseyvee/clock-app",
       description: "A simple clock app built with React, Axios, Sass, and Framer Motion. Multiple APIs are used to gather time, location, and quote data. Built with a mobile-first workflow to ensure the beautiful design is maintained on various devices.",
-      img1: "/projects/clock-1.png",
-      img2: "/projects/clock-2.png",
+      img1: "projects/clock-1.png",
+      img2: "projects/clock-2.png",
     },
     {
       id: 9,
@@ -66,8 +66,8 @@ export const data = {
       demo: "https://kaseyvee.github.io/room-homepage/",
       repo: "https://github.com/kaseyvee/room-homepage",
       description: "A furniture ecommerce homepage built with React and Sass to challenge my layout skills. ",
-      img1: "/projects/room-1.png",
-      img2: "/projects/room-2.png",
+      img1: "projects/room-1.png",
+      img2: "projects/room-2.png",
     },
     {
       id: 10,
@@ -75,7 +75,7 @@ export const data = {
       demo: "",
       repo: "https://github.com/muhammad-usama12/teebo",
       description: "A full-stack social media app that caters to passionate fans who want to engage with other fans and discuss their favourite TV shows. Built with Express, PostgreSQL, React, Sass and Material UI.",
-      img1: "/projects/teebo.png",
+      img1: "projects/teebo.png",
       img2: "",
     },
     {
@@ -84,7 +84,7 @@ export const data = {
       demo: "https://untitled-yum-yum-app.vercel.app/thumbsupyumsup",
       repo: "https://github.com/kaseyvee/untitled-yum-yum-app",
       description: "A full-stack app built with Next.js and PocketBase for sharing your personal restaurant and menu item favourites with your peers. See the demo for some of my favourite Vancouver restaurants :)",
-      img1: "/projects/uyya.png",
+      img1: "projects/uyya.png",
       img2: "",
     },
     {
@@ -93,7 +93,7 @@ export const data = {
       demo: "https://kaseyvee.github.io/me-brand/",
       repo: "https://github.com/kaseyvee/me-brand",
       description: "A front-end template generator app for providing users a medium to introduce themselves with an eye-catching photo/banner using recognizable and iconic designs.",
-      img1: "/projects/mebrand-1.png",
+      img1: "projects/mebrand-1.png",
       img2: "",
     }
   ],
