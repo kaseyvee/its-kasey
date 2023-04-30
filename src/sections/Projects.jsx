@@ -8,11 +8,9 @@ import { data } from "../data";
 
 function Projects() {
   const projects = data.projects;
-
   const [current, setCurrent] = useState(0)
 
   const carouselButtons = projects.map(project => {
-
     function handleGetStyle() {
       if (current === projects.indexOf(project)) {
         return "#121311";
@@ -20,12 +18,14 @@ function Projects() {
     }
 
     const selected = handleGetStyle();
+    const index = projects.indexOf(project);
 
     return (
       <button
         key={project.id + `123`}
+        aria-label={`see project ${index + 1} out of ${projects.length}`}
         className="projects_carousel-nav_button-group_item"
-        onClick={() => setCurrent(projects.indexOf(project))}
+        onClick={() => setCurrent(index)}
         style={selected ? {backgroundColor: `${selected}`} : {}}
       ></button>
     )
@@ -49,7 +49,11 @@ function Projects() {
       <div className="wrapper">
         <h2 id="projects-title">Some things I&apos;ve made</h2>
 
-        <div className="projects_card" aria-label={`project ${current + 1} out of ${projects.length}`}>
+        <div
+          className="projects_card"
+          aria-label={`project ${current + 1} out of ${projects.length}`}
+          style={projects[current].img2 ? { gap: "5rem" } : {}}
+        >
           <div className="projects_card_images">
             <img
               src={projects[current].img1}
@@ -70,7 +74,16 @@ function Projects() {
               <h3>{projects[current].title}</h3>
 
               <div className="project-links">
-                <span><a href={projects[current].demo}>Demo</a> | </span><a href={projects[current].repo}>Repo</a>
+                {projects[current].demo &&
+                <span><a href={projects[current].demo} target="_blank" rel="noopener noreferrer">Demo</a> | </span>}
+
+                <a
+                  href={projects[current].repo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Repo
+                </a>
               </div>
             </header>
 

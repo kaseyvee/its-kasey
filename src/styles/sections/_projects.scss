@@ -1,18 +1,22 @@
 .projects {
-  height: 100vh;
   background-color: $yellow;
+
+  h2 {
+    margin-top: 5rem;
+  }
 
   &_card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5rem;
+    gap: 2rem;
     margin-block: 2.5rem;
-    // margin: 3rem;
+    height: 30rem;
 
     &_images {
       position: relative;
+      max-width: 30rem;
 
       &_main {
         width: 100%;
@@ -50,12 +54,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
     
     &_left, &_right {
       border: none;
       background: none;
       cursor: pointer;
+      padding: 0.5rem;
     }
 
     &_button-group {
@@ -82,7 +87,9 @@
     &_card {
       flex-direction: row;
       margin-block: 5rem;
+      height: auto;
       min-height: 21rem;
+      gap: 2rem !important;
 
       &_images {
         max-width: 40%;

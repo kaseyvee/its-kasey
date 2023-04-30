@@ -67,12 +67,14 @@
 
     position: relative;
 
-    &:hover > .tooltip {
-      display: block;
-    }
-    
-    &:hover > img {
-      filter: brightness(5);
+    img {
+      &:hover ~ .tooltip {
+        display: block;
+      }
+      
+      &:hover {
+        filter: brightness(5);
+      }
     }
 
     p {
