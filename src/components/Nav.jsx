@@ -3,12 +3,11 @@ import { motion } from "framer-motion";
 
 import { ReactComponent as GitHubIcon } from "../assets/icon-github.svg";
 import { ReactComponent as LinkedInIcon}  from "../assets/icon-linkedin.svg";
-import { ReactComponent as MobileNavOpen } from "../assets/mobile-nav-open.svg";
-import { ReactComponent as MobileNavClose } from "../assets/mobile-nav-close.svg";
 
 import { useMediaQuery } from "react-responsive";
 
 import company from "../helpers/data";
+import MobileMenuButton from "./MobileMenuButton";
 
 function Nav() {
   const [navOpen, setNavOpen] = useState(false);
@@ -26,16 +25,14 @@ function Nav() {
   return (
     <nav className="nav" style={navOpen ? { width: "100%" } : {}}>
       {!isDesktop &&
-        <motion.button
+        <button
           aria-expanded={navOpen ? "true" : "false"}
           aria-label="mobile nav menu"
           onClick={handleToggleNav}
           className="nav_mobile-menu"
-          whileTap={{ scaleY: [1, 0, 1] }}
-          transition={{ duration: 0.3 }}
         >
-          {navOpen ? <MobileNavClose /> : <MobileNavOpen />}
-        </motion.button>
+          <MobileMenuButton navOpen={navOpen} />
+        </button>
       }
 
       {(navOpen || isDesktop) &&
