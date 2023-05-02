@@ -3,11 +3,12 @@ import { motion } from "framer-motion";
 
 import { ReactComponent as GitHubIcon } from "../assets/icon-github.svg";
 import { ReactComponent as LinkedInIcon}  from "../assets/icon-linkedin.svg";
+import { ReactComponent as NavOpen } from "../assets/mobile-nav-open.svg";
+import { ReactComponent as NavClose}  from "../assets/mobile-nav-close.svg";
 
 import { useMediaQuery } from "react-responsive";
 
 import company from "../helpers/data";
-import MobileMenuButton from "./MobileMenuButton";
 
 function Nav() {
   const [navOpen, setNavOpen] = useState(false);
@@ -31,7 +32,13 @@ function Nav() {
           onClick={handleToggleNav}
           className="nav_mobile-menu"
         >
-          <MobileMenuButton navOpen={navOpen} />
+          <motion.span
+            animate={{ scaleY: [0, 1] }}
+            transition={{ duration: 0.3 }}
+            whileTap={{ scaleY: 0 }}
+          >
+            {navOpen ? <NavClose /> : <NavOpen />}
+          </motion.span>
         </button>
       }
 
