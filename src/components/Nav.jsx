@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 import { ReactComponent as GitHubIcon } from "../assets/icon-github.svg";
 import { ReactComponent as LinkedInIcon}  from "../assets/icon-linkedin.svg";
@@ -11,24 +12,50 @@ import company from "../data";
 
 function Nav() {
   const [navOpen, setNavOpen] = useState(false);
-  const isDesktop = useMediaQuery({ query: "(min-width: 768px) and (min-height: 550px)"});
+  const isDesktop = useMediaQuery({ query: "(min-width: 768px) and (min-height: 550px)" });
   
   function handleToggleNav() {
     setNavOpen(!navOpen);
   }
 
+  const listItemMotion = {
+    mobile: { opacity: [0, 0, 1], x: [100, 0] },
+    desktop: { opacity: [0, 0, 1], y: [-100, 0] }
+  }
+
   return (
     <nav className="nav" style={navOpen ? { width: "100%" } : {}}>
+      {!isDesktop &&
+        <motion.button
+          aria-expanded={navOpen ? "true" : "false"}
+          aria-label="mobile nav menu"
+          onClick={handleToggleNav}
+          className="nav_mobile-menu"
+          whileTap={{ scale: [1, 0, 1] }}
+          transition={{ duration: 0.1 }}
+        >
+          {navOpen ? <MobileNavClose /> : <MobileNavOpen />}
+        </motion.button>
+      }
+
       {(navOpen || isDesktop) &&
-        <div className="nav_wrapper">
-          <ul className="nav_wrapper_items">
-            <li><a href="#about">About me</a></li>
-            <li><a href="#company">Why {company}?</a></li>
-            <li><a href="#me">Why me?</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Toolkit</a></li>
-            <li><a href="#contacts">Contacts</a></li>
-          </ul>
+        <motion.div
+          className="nav_wrapper"
+          animate={{ opacity: [0, 1] }}
+          transition={{ duration: 0.5 }}
+        >
+          <motion.ul
+            className="nav_wrapper_items"
+            animate={isDesktop ? "desktop" : "mobile"}
+            transition={{ staggerChildren: 0.05, duration: 0.5 }}
+          >
+            <motion.li variants={listItemMotion}><a href="#about" tabIndex={0}>About me</a></motion.li>
+            <motion.li variants={listItemMotion}><a href="#company">Why {company}?</a></motion.li>
+            <motion.li variants={listItemMotion}><a href="#me">Why me?</a></motion.li>
+            <motion.li variants={listItemMotion}><a href="#projects">Projects</a></motion.li>
+            <motion.li variants={listItemMotion}><a href="#skills">Toolkit</a></motion.li>
+            <motion.li variants={listItemMotion}><a href="#contacts">Contacts</a></motion.li>
+          </motion.ul>
 
           <ul className="nav_wrapper_socials">
             <li>
@@ -43,17 +70,7 @@ function Nav() {
               </a>
             </li>
           </ul>
-        </div>
-      }
-      {!isDesktop &&
-        <button
-          aria-expanded={navOpen ? "true" : "false"}
-          aria-label="mobile nav menu"
-          onClick={handleToggleNav}
-          className="nav_mobile-menu"
-        >
-          {navOpen ? <MobileNavClose /> : <MobileNavOpen />}
-        </button>
+        </motion.div>
       }
     </nav>
   );
