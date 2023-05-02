@@ -18,7 +18,6 @@ function About() {
           className="about_img-container"
           viewport={{ once: true }}
           whileInView={{ scaleX: [0, 1] }}
-          // transition={{ duration: 0.2 }}
         >
           <img src={me} alt="Kasey in front of Stonehendge lol" />
         </motion.div>

@@ -44,6 +44,19 @@ function Projects() {
     }
   }
 
+  const variants = {
+    hidden: {
+      opacity: 0
+    },
+    show: {
+      opacity: [0, 1],
+      y: [100, 0],
+      transition: {
+        duration: 1 
+      }
+    }
+  }
+
   return (
     <section aria-labelledby="projects-title" id="projects" className="projects | container">
       <Divider position="top" colour="black" />
@@ -55,8 +68,9 @@ function Projects() {
           aria-label={`project ${current + 1} out of ${projects.length}`}
           style={projects[current].img2 ? { gap: "5rem" } : {}}
           viewport={{ once: true }}
-          whileInView={{ opacity: [0, 1], y: [100, 0] }}
-          transition={{ duration: 1 }}
+          variants={variants}
+          initial="hidden"
+          whileInView="show"
         >
           <div className="projects_card_images">
             <img

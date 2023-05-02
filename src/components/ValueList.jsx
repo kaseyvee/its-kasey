@@ -20,7 +20,7 @@ function ValueList(props) {
       x: [100, 0],
       transition: {
         type: "spring",
-        duration: 1
+        duration: 1.5
       }
     }
   }
