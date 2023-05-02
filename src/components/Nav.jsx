@@ -23,6 +23,21 @@ function Nav() {
     desktop: { opacity: [0, 1], y: [-100, 0] }
   }
 
+  const mobileNavButtonMotion = {
+    open: {
+      scaleY: [0, 1],
+      transition: {
+        duration: 0.3
+      }
+    },
+    close: {
+      scaleY: [0, 1],
+      transition: {
+        duration: 0.3
+      }
+    }
+  }
+
   return (
     <nav className="nav" style={navOpen ? { width: "100%" } : {}}>
       {!isDesktop &&
@@ -33,9 +48,8 @@ function Nav() {
           className="nav_mobile-menu"
         >
           <motion.span
-            animate={{ scaleY: [0, 1] }}
-            transition={{ duration: 0.3 }}
-            whileTap={{ scaleY: 0 }}
+            variants={mobileNavButtonMotion}
+            animate={navOpen ? "close" : "open"}
           >
             {navOpen ? <NavClose /> : <NavOpen />}
           </motion.span>
