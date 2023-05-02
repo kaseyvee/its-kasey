@@ -6,7 +6,7 @@ export const data = {
       id: 1,
       number: 1,
       title: "Collaboration",
-      description: "There’s no greater sense of satisfaction than witnessing ideas come to life through collaborative endeavours. I'd always be happy to hop on calls hit the DMs to exchange ideas and thoughts!"
+      description: "There’s no greater sense of satisfaction than witnessing ideas come to life through collaborative endeavours. I'm always be happy to hop on calls or hit the DMs to exchange ideas and thoughts!"
     },
     {
       id: 2,
