@@ -1,10 +1,11 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 import { ReactComponent as ArrowLeft } from "../assets/icon-arrow-left.svg";
 import { ReactComponent as ArrowRight } from "../assets/icon-arrow-right.svg";
 import Divider from "../components/Divider";
 
-import { data } from "../data";
+import { data } from "../helpers/data";
 
 function Projects() {
   const projects = data.projects;
@@ -49,10 +50,13 @@ function Projects() {
       <div className="wrapper">
         <h2 id="projects-title">Some things I&apos;ve made</h2>
 
-        <div
+        <motion.div
           className="projects_card"
           aria-label={`project ${current + 1} out of ${projects.length}`}
           style={projects[current].img2 ? { gap: "5rem" } : {}}
+          viewport={{ once: true }}
+          whileInView={{ opacity: [0, 1], y: [100, 0] }}
+          transition={{ duration: 1 }}
         >
           <div className="projects_card_images">
             <img
@@ -89,7 +93,7 @@ function Projects() {
 
             <p>{projects[current].description}</p>
           </div>
-        </div>
+        </motion.div>
 
         <div className="projects_carousel-nav">
           <button

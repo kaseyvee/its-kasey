@@ -5,12 +5,16 @@
 * {
   margin: 0;
   padding: 0;
-  transition-duration: 200ms;
+  // transition-duration: 200ms;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+a:hover, svg:hover, img:hover {
+  transition-duration: 200ms;
 }
 
 li {
@@ -23,10 +27,13 @@ svg {
 
 html {
   scroll-behavior: smooth;
-
+  overflow-x: hidden;
+  
   body {
     @include center;
     background-color: $black;
+    overflow-x: hidden;
+    // transition: none;
   
     #root {
       width: 100%;

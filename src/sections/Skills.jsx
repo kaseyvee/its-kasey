@@ -1,7 +1,21 @@
-import { data } from "../data";
+import { motion } from "framer-motion";
+import { data } from "../helpers/data";
+import staggeredContainer from "../helpers/animations";
 
 function Skills() {
   const skills = data.skills;
+
+  const skillItems = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      y: [100, 0],
+      transition: {
+        type: "spring",
+        duration: 1
+      }
+    }
+  }
 
   const skillsList = skills.map(skill => {
 
@@ -17,12 +31,16 @@ function Skills() {
     })
 
     return (
-      <div key={skill.id} className="skills_list_item">
+      <motion.div
+        key={skill.id}
+        className="skills_list_item"
+        variants={skillItems}
+      >
         <h3>{skill.title}</h3>
         <div className="skills_list_item_icons">
           {skillIcons}
         </div>
-      </div>
+      </motion.div>
     )
   })
 
@@ -31,9 +49,15 @@ function Skills() {
       <div className='wrapper'>
         <h2 id="skills-title">Some tools I&apos;ve worked with</h2>
 
-        <div className="skills_list">
+        <motion.div
+          className="skills_list"
+          variants={staggeredContainer}
+          viewport={{ once: true }}
+          initial="hidden"
+          whileInView="show"
+        >
           {skillsList}
-        </div>
+        </motion.div>
 
         <div className="skills_also also">
           <p>and also</p>

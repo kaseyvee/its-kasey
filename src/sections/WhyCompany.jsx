@@ -1,4 +1,4 @@
-import company, { data } from "../data";
+import company, { data } from "../helpers/data";
 import ValueList from "../components/ValueList";
 import Divider from "../components/Divider";
 

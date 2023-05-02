@@ -1,4 +1,4 @@
-import { data } from "../data";
+import { data } from "../helpers/data";
 import ValueList from "../components/ValueList";
 
 function WhyMe() {

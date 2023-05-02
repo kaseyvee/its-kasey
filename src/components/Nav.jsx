@@ -8,7 +8,7 @@ import { ReactComponent as MobileNavClose } from "../assets/mobile-nav-close.svg
 
 import { useMediaQuery } from "react-responsive";
 
-import company from "../data";
+import company from "../helpers/data";
 
 function Nav() {
   const [navOpen, setNavOpen] = useState(false);
@@ -19,8 +19,8 @@ function Nav() {
   }
 
   const listItemMotion = {
-    mobile: { opacity: [0, 0, 1], x: [100, 0] },
-    desktop: { opacity: [0, 0, 1], y: [-100, 0] }
+    mobile: { opacity: [0, 1], x: [100, 0] },
+    desktop: { opacity: [0, 1], y: [-100, 0] }
   }
 
   return (
@@ -31,8 +31,8 @@ function Nav() {
           aria-label="mobile nav menu"
           onClick={handleToggleNav}
           className="nav_mobile-menu"
-          whileTap={{ scale: [1, 0, 1] }}
-          transition={{ duration: 0.1 }}
+          whileTap={{ scaleY: [1, 0, 1] }}
+          transition={{ duration: 0.3 }}
         >
           {navOpen ? <MobileNavClose /> : <MobileNavOpen />}
         </motion.button>
@@ -49,7 +49,7 @@ function Nav() {
             animate={isDesktop ? "desktop" : "mobile"}
             transition={{ staggerChildren: 0.05, duration: 0.5 }}
           >
-            <motion.li variants={listItemMotion}><a href="#about" tabIndex={0}>About me</a></motion.li>
+            <motion.li variants={listItemMotion}><a href="#about">About me</a></motion.li>
             <motion.li variants={listItemMotion}><a href="#company">Why {company}?</a></motion.li>
             <motion.li variants={listItemMotion}><a href="#me">Why me?</a></motion.li>
             <motion.li variants={listItemMotion}><a href="#projects">Projects</a></motion.li>

@@ -68,6 +68,7 @@
     background: none;
     border: none;
     cursor: pointer;
+    z-index: 100;
 
     svg {
       fill: $yellow;
