@@ -21,7 +21,15 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 2rem;
+
     overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    
 
     &_items {
       @include karla;
