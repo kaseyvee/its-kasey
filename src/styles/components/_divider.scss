@@ -4,6 +4,7 @@
   width: 100%;
   overflow: hidden;
   line-height: 0;
+  transition-duration: 200ms;
   
   &-bottom {
     bottom: -1px;
@@ -27,5 +28,19 @@
     display: block;
     width: calc(100% + 1.3px);
     height: 120px;
+  }
+
+  @media (max-width: 767px) {
+    svg {
+        width: calc(198% + 1.3px);
+        height: 90px;
+    }
+  }
+  
+  @media (max-height: 550px) {
+    svg {
+        width: calc(198% + 1.3px);
+        height: 70px;
+    }
   }
 }
