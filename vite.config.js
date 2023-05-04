@@ -4,7 +4,7 @@ import svgr from 'vite-plugin-svgr'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/cover-letter/",
+  base: "/cv-p8/",
   plugins: [
     react(),
     svgr({ 

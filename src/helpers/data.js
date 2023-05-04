@@ -31,14 +31,14 @@ export const data = {
     {
       id: 5,
       number: 2,
-      title: "Simplicity",
-      description: "User experience is the key to retaining existing and welcoming new clients. I believe that if a subpar user experience is unacceptable to me, I've got to hold my own products to the same high standard."
+      title: "User Experience",
+      description: "I believe user experience is the key to retaining existing and welcoming new clients. If a subpar user experience is unacceptable to me, I must hold my own products to the same high standard. I like to sweat the small stuff when it comes to a simple and seamless user experience."
     },
     {
       id: 6,
       number: 3,
       title: "Skill Upkeep",
-      description: "I hate feeling mentally stagnant and love being able to learn new things. Produce8 changes fast and I'd be very excited to be a part of that valueable ride."
+      description: "I hate feeling mentally stagnant and love being able to learn new things. Produce8 changes fast and I'd be very excited to be a part of that valuable ride."
     }
   ],
   projects: [
