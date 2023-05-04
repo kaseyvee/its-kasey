@@ -5,20 +5,20 @@ export const data = {
     {
       id: 1,
       number: 1,
-      title: "Collaboration",
-      description: "There’s no greater sense of satisfaction than witnessing ideas come to life through collaborative endeavours. I'm always be happy to hop on calls or hit the DMs to exchange ideas and thoughts!"
+      title: "Knowledge sharing",
+      description: "There’s no greater sense of satisfaction than witnessing ideas come to life through collaborative endeavours. I'd love to be apart of a team that encourages constant exchange of ideas and pair programming."
     },
     {
       id: 2,
       number: 2,
-      title: "Simplicity",
-      description: "Making user experience and simplicity a top priority is consistent with my values as a developer and user. It can be incredibly frustrating when navigating a system feels like an unnecessary struggle, rather than a straightforward path from point A to point B."
+      title: "Sustainability",
+      description: "Produce8's emphasis on a remote-first work culture is indicative of its commitment to this. As someone who actively considers their carbon footprint impacts, I would love to a part of a work culture that values this as much as I do. Bye bye commute burnout and unnecessary emissions!"
     },
     {
       id: 3,
       number: 3,
-      title: "Skill Upkeep",
-      description: "An organization that recognizes and prioritizes the personal and professional development of its employees is indicative of its commitment to serving its clients and promoting the well-being of its staff. I'd be very grateful to be apart of this environment."
+      title: "Transparency",
+      description: "Produce8's dedication to transparency not only through their product but also within its own team likely creates a trustworthy and supportive work environment. Sign me up."
     }
   ],
   whyMe: [
