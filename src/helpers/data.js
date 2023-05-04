@@ -1,4 +1,4 @@
-const company = "Input Logic";
+const company = "Produce8";
 
 export const data = {
   whyCompany: [
