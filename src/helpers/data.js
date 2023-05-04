@@ -5,7 +5,7 @@ export const data = {
     {
       id: 1,
       number: 1,
-      title: "Knowledge sharing",
+      title: "Collaboration",
       description: "There’s no greater sense of satisfaction than witnessing ideas come to life through collaborative endeavours. I'd love to be apart of a team that encourages constant exchange of ideas and pair programming."
     },
     {
@@ -26,7 +26,7 @@ export const data = {
       id: 4,
       number: 1,
       title: "Collaboration",
-      description: "By prioritizing collaboration, I'm able to produce work that is truly reflective of the vision and values of the team as a whole. I believe it's important to both consistently provide the necessary feedback and recognize each other's wins. Good vibes keep the wheel rolling!"
+      description: "By prioritizing collaboration, I'm able to produce work that is truly reflective of the vision and values of the team as a whole. I believe it's important to both consistently provide the necessary feedback and recognize each other's wins. I'm also a big believer in pair programming."
     },
     {
       id: 5,
@@ -37,8 +37,8 @@ export const data = {
     {
       id: 6,
       number: 3,
-      title: "Accessibility",
-      description: "The internet is a place that should be accessible to everyone. I continuously strive to expand my knowledge of applying inclusive designs, ensuring that my work can reach the widest possible audience, regardless of disabilities."
+      title: "Skill Upkeep",
+      description: "I hate feeling mentally stagnant and love being able to learn new things. Produce8 changes fast and I'd be very excited to be a part of that valueable ride."
     }
   ],
   projects: [
