@@ -1,4 +1,4 @@
-const company = "Produce8";
+const company = "Lemur";
 
 export const data = {
   whyCompany: [
@@ -6,19 +6,19 @@ export const data = {
       id: 1,
       number: 1,
       title: "Collaboration",
-      description: "There’s no greater sense of satisfaction than witnessing ideas come to life through collaborative endeavours. I'd love to be apart of a team that encourages constant exchange of ideas and pair programming."
+      description: "I understand the value of collaboration and how it can contribute to creating better products. The company's commitment to building a strong team and working collaboratively to achieve goals aligns with my own beliefs and would provide me with an opportunity to learn and grow while making a meaningful contribution to the team's success."
     },
     {
       id: 2,
       number: 2,
-      title: "Sustainability",
-      description: "Produce8's emphasis on a remote-first work culture is indicative of its commitment to this. As someone who actively considers their carbon footprint impacts, I would love to a part of a work culture that values this as much as I do. Bye bye commute burnout and unnecessary emissions!"
+      title: "Eye-catching",
+      description: "I would love to use my skills to help bring Lemur's eye-catching designs to life. I believe that the company's emphasis on creating visually appealing products is an ideal fit for me, and would love to have the chance to play a key role in this process."
     },
     {
       id: 3,
       number: 3,
-      title: "Transparency",
-      description: "Produce8's dedication to transparency not only through their product but also within its own team likely creates a trustworthy and supportive work environment. Sign me up."
+      title: "Accessibility",
+      description: "I’m not a designer, but as a developer I’ve found articles such as Accessibility in Design and Up Your Product’s Accessibility Game to be very helpful a11y resources. A company that strongly emphasizes inclusive products is indicative of its commitment to both clients and their users."
     }
   ],
   whyMe: [
@@ -37,8 +37,8 @@ export const data = {
     {
       id: 6,
       number: 3,
-      title: "Skill Upkeep",
-      description: "I hate feeling mentally stagnant and love being able to learn new things. Produce8 changes fast and I'd be very excited to be a part of that valuable ride."
+      title: "Accessibility",
+      description: "The internet is a place that should be accessible to everyone. I continuously strive to expand my knowledge of applying inclusive designs, ensuring that my work can reach the widest possible audience, regardless of disabilities."
     }
   ],
   projects: [
