@@ -8,8 +8,6 @@ import { ReactComponent as NavClose}  from "../assets/mobile-nav-close.svg";
 
 import { useMediaQuery } from "react-responsive";
 
-import company from "../helpers/data";
-
 function Nav() {
   const [navOpen, setNavOpen] = useState(false);
   const isDesktop = useMediaQuery({ query: "(min-width: 768px) and (min-height: 550px)" });
@@ -68,7 +66,6 @@ function Nav() {
             transition={{ staggerChildren: 0.05, duration: 0.5 }}
           >
             <motion.li variants={listItemMotion}><a href="#about">About me</a></motion.li>
-            <motion.li variants={listItemMotion}><a href="#company">Why {company}?</a></motion.li>
             <motion.li variants={listItemMotion}><a href="#me">Why me?</a></motion.li>
             <motion.li variants={listItemMotion}><a href="#projects">Projects</a></motion.li>
             <motion.li variants={listItemMotion}><a href="#skills">Toolkit</a></motion.li>

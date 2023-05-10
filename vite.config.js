@@ -4,7 +4,7 @@ import svgr from 'vite-plugin-svgr'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/cv-lemur/",
+  base: "/its-kasey/",
   plugins: [
     react(),
     svgr({ 

@@ -1,4 +1,4 @@
-const company = "Lemur";
+const company = "Yixin Media";
 
 export const data = {
   whyCompany: [
