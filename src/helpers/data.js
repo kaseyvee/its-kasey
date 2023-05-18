@@ -1,4 +1,4 @@
-const company = "Yixin Media";
+const company = "there";
 
 export const data = {
   whyCompany: [
@@ -44,12 +44,12 @@ export const data = {
   projects: [
     {
       id: 7,
-      title: "Manage Landing Page",
-      demo: "https://kaseyvee.github.io/manage-landing/",
-      repo: "https://github.com/kaseyvee/manage-landing",
-      description: "This landing page was built using React, Sass, and Framer Motion, with a mobile-first workflow and web accessibility in mind. Web accessibility was a key consideration in the development process, making sure the landing page is inclusive and can be accessed by everyone.",
-      img1: "projects/manage-1.png",
-      img2: "projects/manage-2.png",
+      title: "Photosnap Multi-page Marketing Website",
+      demo: "https://kaseyvee.github.io/photosnap/",
+      repo: "https://github.com/kaseyvee/photosnap",
+      description: "This multi-page website was built using React, Sass, and Framer Motion, with a mobile-first workflow and web accessibility in mind. TypeScript was used to allow for a smoother development process with active typechecking between components.",
+      img1: "projects/photosnap-1.png",
+      img2: "projects/photosnap-2.png",
     },
     {
       id: 8,
@@ -62,12 +62,12 @@ export const data = {
     },
     {
       id: 9,
-      title: "Room Homepage",
-      demo: "https://kaseyvee.github.io/room-homepage/",
-      repo: "https://github.com/kaseyvee/room-homepage",
-      description: "A furniture ecommerce homepage built with React and Sass to challenge my layout skills. ",
-      img1: "projects/room-1.png",
-      img2: "projects/room-2.png",
+      title: "Manage Landing Page",
+      demo: "https://kaseyvee.github.io/manage-landing/",
+      repo: "https://github.com/kaseyvee/manage-landing",
+      description: "This landing page was built using React, Sass, and Framer Motion, with a mobile-first workflow and web accessibility in mind. Web accessibility was a key consideration in the development process, making sure the landing page is inclusive and can be accessed by everyone.",
+      img1: "projects/manage-1.png",
+      img2: "projects/manage-2.png",
     },
     {
       id: 10,
