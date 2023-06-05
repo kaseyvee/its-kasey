@@ -74,7 +74,7 @@ export const data = {
       title: "teebo",
       demo: "",
       repo: "https://github.com/muhammad-usama12/teebo",
-      description: "A tv discourse app catered toward tv show fanbases. This comprehensive endeavour served as our final project to gain hands-on experience in building a full-stack application in a team environment. From conceptualization to implementation, we meticulously designed mockups, created efficient database models, and crafted user stories to ensure a seamless user experience. This project showcased our ability to collaborate, plan, and execute a complete application, highlighting our skills in full-stack development.",
+      description: "A tv discourse app catered toward tv show fanbases. This comprehensive endeavour served as hands-on experience in building a full-stack application in a team environment. From conceptualization to implementation, we meticulously designed mockups, created efficient database models, and crafted user stories to ensure a seamless user experience. This project showcased our ability to collaborate, plan, and execute a complete application, highlighting our skills in full-stack development.",
       img1: "projects/teebo.png",
       img2: "",
     },
