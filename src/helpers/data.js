@@ -45,8 +45,8 @@ export const data = {
     {
       id: 6.5,
       title: "District Eleven Restaurant",
-      demo: "https://d11-kaseyvee.vercel.app/",
-      repo: "https://github.com/kaseyvee/D11",
+      demo: "https://district-eleven.vercel.app/",
+      repo: "https://github.com/kaseyvee/district-eleven",
       description: "A website for a Vancouver-based asian-fusion restaurant, District Eleven. This project involved redesigning the current website using React and Contentful, addressing frustrations of peers, customers, and managers. From Figma mockups to a functional website, the redesign aimed to improve user experience and streamline processes.",
       img1: "projects/district-1.png",
       img2: "projects/district-2.png",
