@@ -66,9 +66,9 @@ function Nav() {
             transition={{ staggerChildren: 0.05, duration: 0.5 }}
           >
             <motion.li variants={listItemMotion}><a href="#about">About me</a></motion.li>
-            <motion.li variants={listItemMotion}><a href="#me">Why me?</a></motion.li>
             <motion.li variants={listItemMotion}><a href="#projects">Projects</a></motion.li>
             <motion.li variants={listItemMotion}><a href="#skills">Toolkit</a></motion.li>
+            <motion.li variants={listItemMotion}><a href="#me">Why me?</a></motion.li>
             <motion.li variants={listItemMotion}><a href="#contacts">Contacts</a></motion.li>
           </motion.ul>
 

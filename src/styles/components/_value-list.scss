@@ -6,7 +6,7 @@
       position: relative;
 
       h3 {
-        color: $yellow;
+        color: $black;
         position: absolute;
         bottom: 1.25rem;
         left: 2rem;
@@ -16,9 +16,10 @@
 
     &_description {
       max-width: 35rem;
+      color: $black;
     }
     
-    p {
+    .numbers {
       color: $egg;
     }
   }

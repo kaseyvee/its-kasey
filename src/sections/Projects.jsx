@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 
 import { ReactComponent as ArrowLeft } from "../assets/icon-arrow-left.svg";
 import { ReactComponent as ArrowRight } from "../assets/icon-arrow-right.svg";
-import Divider from "../components/Divider";
 
 import { data } from "../helpers/data";
 
@@ -59,7 +58,6 @@ function Projects() {
 
   return (
     <section aria-labelledby="projects-title" id="projects" className="projects | container">
-      <Divider position="top" colour="black" />
       <div className="wrapper">
         <h2 id="projects-title">Some things I&apos;ve made</h2>
 
