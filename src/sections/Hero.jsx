@@ -9,7 +9,7 @@ function Hero() {
         <InfoBlock
           hero={true}
           header={`Hi ${company}!`}
-          blurb="Thanks for taking the time to click on my online cover letter. Regular cover letters can be boring- so I wanted to take an opportunity to showcase my skills while introducing myself!"
+          blurb="Thanks for taking the time to visit my website. Here is where you get to learn all about my web development journey. :)"
           buttonText="Get to know me"
           href="#about"
         />
