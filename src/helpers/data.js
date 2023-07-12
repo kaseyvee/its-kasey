@@ -86,24 +86,6 @@ export const data = {
       description: "A tv discourse app catered toward tv show fanbases. This comprehensive endeavour served as hands-on experience in building a full-stack application in a team environment. From conceptualization to implementation, we meticulously designed mockups, created efficient database models, and crafted user stories to ensure a seamless user experience. This project showcased our ability to collaborate, plan, and execute a complete application, highlighting our skills in full-stack development.",
       img1: "projects/teebo.png",
       img2: "",
-    },
-    {
-      id: 11,
-      title: "untitled yum yum app",
-      demo: "https://untitled-yum-yum-app.vercel.app/thumbsupyumsup",
-      repo: "https://github.com/kaseyvee/untitled-yum-yum-app",
-      description: "A full-stack app built with Next.js and PocketBase for sharing your personal restaurant and menu item favourites with your peers. See the demo for some of my favourite Vancouver restaurants :)",
-      img1: "projects/uyya.png",
-      img2: "",
-    },
-    {
-      id: 12,
-      title: "me.brand()",
-      demo: "https://kaseyvee.github.io/me-brand/",
-      repo: "https://github.com/kaseyvee/me-brand",
-      description: "A front-end template generator app for providing users a medium to introduce themselves with an eye-catching photo/banner using recognizable and iconic designs.",
-      img1: "projects/mebrand-1.png",
-      img2: "",
     }
   ],
   skills: [
