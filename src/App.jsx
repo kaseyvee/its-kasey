@@ -1,23 +1,24 @@
-import Nav from "./components/Nav"
-import Hero from "./sections/Hero"
-import About from "./sections/About"
-import WhyMe from "./sections/WhyMe"
-import Projects from "./sections/Projects"
-import Skills from "./sections/Skills"
-import Contacts from "./sections/Contacts"
+// import Nav from "./components/Nav"
+// import Hero from "./sections/Hero"
+// import About from "./sections/About"
+// import WhyMe from "./sections/WhyMe"
+// import Projects from "./sections/Projects"
+// import Skills from "./sections/Skills"
+// import Contacts from "./sections/Contacts"
 
 function App() {
 
   return (
     <>
-      <Nav />
+      {/* <Nav /> */}
       <main>
-        <Hero />
+        {/* <Hero />
         <About />
         <Projects />
         <Skills />
         <WhyMe />
-        <Contacts />
+        <Contacts /> */}
+        <img src="favicon.ico" width={"100%"} />
       </main>
     </>
   )
